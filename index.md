@@ -1,10 +1,5 @@
 ---
 title: Secure Prometheus
-feature_text: |
-  ## Secure Connection Prometheus Monitoring Web Server and Container
-  By Najwan Octavian Gerrard
-feature_image: "https://picsum.photos/1300/400?image=989"
-excerpt: 
 ---
 
 Di zaman modern sekarang yang serba otomatis serta kebutuhan akan monitoring atau pengecekan secara berkala, membuat kebutuhan akan tools automation monitoring yang canggih tanpa adanya campur tangan manusia untuk pengambilan data yang di monitoring tersebut, seperti penggunaan CPU, memory, disk atau traffic jaringan, menjadi semakin meningkat. Prometheus adalah salah satu solusi akan hal tersebut, yang menyediakan cara monitoring real time tanpa perlu adanya campur tangan manusia saat mengambil data yang harus di monitoring.
@@ -38,98 +33,75 @@ Serta dibutuhkan juga Alerting agar dapat memberikan peringatan dini terkait sem
 
 ### Prometheus
 
-Prometheus adalah salah satu tools monitoring system yang berbasis Cloud yang open source, yang lebih berfokus pada pengelolaan metrics dari suatu aplikasi atau system. Metrics sendiri merupakan data angka yang menunjukan performa atau nilai kinerja suatu aplikasi atau system. 
+&nbsp;&nbsp;&nbsp;&nbspPrometheus adalah salah satu tools monitoring system yang berbasis Cloud yang open source, yang lebih berfokus pada pengelolaan metrics dari suatu aplikasi atau system. Metrics sendiri merupakan data angka yang menunjukan performa atau nilai kinerja suatu aplikasi atau system. 
 
 ### Grafana
 
-Grafana merupakan salah satu tools berbasis Web untuk data analitik dan data visualisasi yang interaktif dan real time, dengan kemampuan integrasi ke banyak tools lain, seperti prometheus, Loki Promtail, AWS IoT SiteWise, Apache Cassandra dan banyak lagi. Dengan kemampuannya tersebut membuat Grafana lebih fleksible, tidak hanya untuk satu atau dua tools saja. Grafana sendiri open source.
+&nbsp;&nbsp;&nbsp;&nbspGrafana merupakan salah satu tools berbasis Web untuk data analitik dan data visualisasi yang interaktif dan real time, dengan kemampuan integrasi ke banyak tools lain, seperti prometheus, Loki Promtail, AWS IoT SiteWise, Apache Cassandra dan banyak lagi. Dengan kemampuannya tersebut membuat Grafana lebih fleksible, tidak hanya untuk satu atau dua tools saja. Grafana sendiri open source.
 
 ### Prometheus Alert Manager
 
-Prometheus Alert Manager merupakan suatu tools yang berguna sebagai peringatan atau alerting, yang dimana nantinya, alert manager ini akan menerima data dari Prometheus, misalkan ada layanan atau aplikasi yang Down, yang nantinya akan di teruskan ke alert manager lalu mengirim ke layanan notifikasi seperti Email, Slack, atau Discord dan masih bayak lagi.
+&nbsp;&nbsp;&nbsp;&nbspPrometheus Alert Manager merupakan suatu tools yang berguna sebagai peringatan atau alerting, yang dimana nantinya, alert manager ini akan menerima data dari Prometheus, misalkan ada layanan atau aplikasi yang Down, yang nantinya akan di teruskan ke alert manager lalu mengirim ke layanan notifikasi seperti Email, Slack, atau Discord dan masih bayak lagi.
 
 ### Apache
 
-Apache adalah salah satu software web server gratis dan open source, yang memungkinkan pengguna mengupload website nya ke internet. Apache sendiri sudah hampir menjadi platform website bagi kurang lebih 33% website di dunia, dengan nama resmi “Apache HTTP Server”. Apache pertama kali dirilis pada tahun 1995 dan dikelola oleh “Apache Software Foundation”.
+&nbsp;&nbsp;&nbsp;&nbspApache adalah salah satu software web server gratis dan open source, yang memungkinkan pengguna mengupload website nya ke internet. Apache sendiri sudah hampir menjadi platform website bagi kurang lebih 33% website di dunia, dengan nama resmi “Apache HTTP Server”. Apache pertama kali dirilis pada tahun 1995 dan dikelola oleh “Apache Software Foundation”.
 
 ### Nginx
 
-NGINX (Engine-X) adalah salah satu web server yang banyak digunakan untuk membuat suatu website, dan digunakan hampir 34% dari seluruh website yang ada di internet. Nginx memiliki daya tarik karena sifatnya sebagai server HTTP, Reverse proxy, dan load balancer.
+&nbsp;&nbsp;&nbsp;&nbspNGINX (Engine-X) adalah salah satu web server yang banyak digunakan untuk membuat suatu website, dan digunakan hampir 34% dari seluruh website yang ada di internet. Nginx memiliki daya tarik karena sifatnya sebagai server HTTP, Reverse proxy, dan load balancer.
 
 ### Container
 
-Container adalah sebuah unit yang mengemas code dan semua dependensinya. Sehingga dapat berjalan atau berpindah environment dengan lebih cepat dan efisien. Container tersebut sangat ringan tidak seperti Virtual Machine (VM) yang memerlukan OS untuk setiap VM nya, karena dalam container hanya berisikan source code dan dependensinya saja, jadi memungkinkan menginstal apa yang di perlukan saja.
+&nbsp;&nbsp;&nbsp;&nbspContainer adalah sebuah unit yang mengemas code dan semua dependensinya. Sehingga dapat berjalan atau berpindah environment dengan lebih cepat dan efisien. Container tersebut sangat ringan tidak seperti Virtual Machine (VM) yang memerlukan OS untuk setiap VM nya, karena dalam container hanya berisikan source code dan dependensinya saja, jadi memungkinkan menginstal apa yang di perlukan saja.
 
 ### Docker
 
-Docker adalah salah satu platform software yang digunakan untuk membuat, mengelola aplikasi yang nantinya dikemas dalam sebuah wadah yang terisolasi yaitu container. Docker nantinya akan mengemas aplikasi berserta dependensi yang diperlukan dalam satu paket yang ringan. Sehingga dapat dijalankan secara konsisten tanpa mengubah konfigurasi.
+&nbsp;&nbsp;&nbsp;&nbspDocker adalah salah satu platform software yang digunakan untuk membuat, mengelola aplikasi yang nantinya dikemas dalam sebuah wadah yang terisolasi yaitu container. Docker nantinya akan mengemas aplikasi berserta dependensi yang diperlukan dalam satu paket yang ringan. Sehingga dapat dijalankan secara konsisten tanpa mengubah konfigurasi.
 
 ### Exporter Prometheus
 
-Exporter Prometheus adalah suatu tools yang digunakan untuk mengubah data metrics dari suatu layanan aplikasi atau sistem yang tadinya tidak bisa di baca oleh Prometheus menjadi bisa di baca, bertindak sebagai perantara untuk layanan yang di pantau dengan Prometheus.
+&nbsp;&nbsp;&nbsp;&nbspExporter Prometheus adalah suatu tools yang digunakan untuk mengubah data metrics dari suatu layanan aplikasi atau sistem yang tadinya tidak bisa di baca oleh Prometheus menjadi bisa di baca, bertindak sebagai perantara untuk layanan yang di pantau dengan Prometheus.
 
 ### CAdvisor
 
-Cadvisor (Container Advisor) adalah suatu tools yang digunakan untuk memonitoring atau memantau performa / kinerja dari suatu container, serta mengambil data metrics dari Container, seperti penggunaan CPU, Memory, Traffic jaringan atau Disk I/O dari setiap container yang ada.
+&nbsp;&nbsp;&nbsp;&nbspCadvisor (Container Advisor) adalah suatu tools yang digunakan untuk memonitoring atau memantau performa / kinerja dari suatu container, serta mengambil data metrics dari Container, seperti penggunaan CPU, Memory, Traffic jaringan atau Disk I/O dari setiap container yang ada.
 
 ### SSL (Secure Sockets Layer)
 
-SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti informasi pribadi, password, rekening, dan data lain yang bersifat sensitif, saat data dikirim kan ke server, data tersebut akan di enkripsi untuk menjaga keamanan dari data tersebut. SSL sertifikat yaitu sertifikat digital digunakan untuk autentikasi indentitas dari situs web yang memungkinkan koneksi enkripsi yang aman. Dan sering digunakan untuk menjaga keamanan data pengguna yang perlu memverifikasi kepemilikan situs website. 
-
-1. Konfigurasi SSL Certificate untuk layanan
-
-&nbsp;&nbsp;\- Buat directory untuk menyimpan CA di dalam directory “/etc/ssl/” agar lebih rapi serta mudah di identifikasi.
-
-<p style="text-indent: 2em;">\- Buat file IP SAN untuk setiap Server / Node.</p>p>
-    - Buat Certificate untuk beberapa layanan berikut :
-      -  Prometheus
-      -  Node Exporter
-      -  Web Service dan Exporter Apache
-      -  Client Web Server Apache
-      -  Web Service dan Exporter Nginx
-3. Install Node Exporter dan Konfigurasi SSL
-4. Install dan Konfigurasi Apache dengan SSL
-
-4\. Install dan Konfigurasi Nginx dengan SSL
-
-5\. pass
-
+&nbsp;&nbsp;&nbsp;&nbspSSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti informasi pribadi, password, rekening, dan data lain yang bersifat sensitif, saat data dikirim kan ke server, data tersebut akan di enkripsi untuk menjaga keamanan dari data tersebut. SSL sertifikat yaitu sertifikat digital digunakan untuk autentikasi indentitas dari situs web yang memungkinkan koneksi enkripsi yang aman. Dan sering digunakan untuk menjaga keamanan data pengguna yang perlu memverifikasi kepemilikan situs website.
 
 ## Implementasi
-1. ###Konfigurasi SSL Certificate untuk layanan
-&nbsp;&nbsp;a\. Buat directory untuk menyimpan CA di dalam directory **_“/etc/ssl/”_** agar lebih rapi serta mudah di identifikasi.
+### 1. Konfigurasi SSL Certificate untuk layanan
+  - Buat directory untuk menyimpan CA di dalam directory **_“/etc/ssl/”_** agar lebih rapi serta mudah di identifikasi.
+    - Node Monitoring
+      ```bash
+      # Untuk Prometheus
+      sudo mkdir -p /etc/ssl/prometheus
+      sudo mkdir -p /etc/ssl/prometheus/cert/
+      sudo mkdir -p /etc/ssl/prometheus/cert/<IP atau Domain dari Prometheus>/
+      
+      # Untuk Targets Prometheus
+      sudo mkdir -p /etc/ssl/node_exporter/
+      sudo mkdir -p /etc/ssl/apache_exporter/
+      sudo mkdir -p /etc/ssl/nginx_exporter/
+      ``` 
+    - Node Client 1
+      ```
+      # Untuk Node Exporter
+      sudo mkdir -p /etc/ssl/node_exporter/
 
-&nbsp;&nbsp;&nbsp;&nbsp;- Node Monitoring
+      # Untuk Apache
+      sudo mkdir -p /etc/ssl/apache/
+      sudo mkdir -p /etc/ssl/apache/client/
 
-  ```bash
-  # Untuk Prometheus
-  sudo mkdir -p /etc/ssl/prometheus
-  sudo mkdir -p /etc/ssl/prometheus/cert/
-  sudo mkdir -p /etc/ssl/prometheus/cert/<IP atau Domain dari Prometheus>/
-  
-  # Untuk Targets Prometheus
-  sudo mkdir -p /etc/ssl/node_exporter/
-  sudo mkdir -p /etc/ssl/apache_exporter/
-  sudo mkdir -p /etc/ssl/nginx_exporter/
-  ```
-       
-&nbsp;&nbsp;&nbsp;&nbsp;\- Node Client 1
-
-       ```
-       # Untuk Node Exporter
-       sudo mkdir -p /etc/ssl/node_exporter/
-
-       # Untuk Apache
-       sudo mkdir -p /etc/ssl/apache/
-       sudo mkdir -p /etc/ssl/apache/client/
-
-       sudo mkdir -p /etc/ssl/nginx
-       ```
-     * Node Client 2
-       ```
-       # Untuk Node Exporter
-       sudo mkdir -p /etc/ssl/node_exporter/
-       ```
+      sudo mkdir -p /etc/ssl/nginx
+      ```
+    - Node Client 2
+      ```
+      # Untuk Node Exporter
+      sudo mkdir -p /etc/ssl/node_exporter/
+      ```
        
    - Buat file IP SAN untuk setiap Server / Node.
      ```
@@ -341,7 +313,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
      sudo systemctl status nginx.service
      ```
      
-6. Install Apache Exporter dengan SSL
+### 5. Install Apache Exporter dengan SSL
   - Download Package Apache Exporter, lalu pindahkan ke directory **_"/etc"_**.
     
     ```bash
@@ -385,7 +357,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     sudo systemctl status node-exporter.service
     ```
     
-7. Install Nginx Exporter dengan SSL
+### 6. Install Nginx Exporter dengan SSL
   - Install Package Nginx Exporter, lalu pindahkan ke directory **_"/etc"_**.
     ```bash
     wget https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v0.11.0/nginx-prometheus-exporter_0.11.0_linux_amd64.tar.gz
@@ -434,7 +406,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     sudo systemctl status nginx-exporter.service
     ```
 
-8. Install Docker 
+### 7. Install Docker 
   - Menambahkan repository dari Docker.
     ```
     sudo apt-get update
@@ -455,7 +427,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     sudo chmod 666 /var/run/docker.sock
     docker version
     ```
-9. Install CAdvisor untuk Monitoring Container Docker
+### 8. Install CAdvisor untuk Monitoring Container Docker
    ```
    docker run -d \
        --volume=/:/rootfs:ro \
@@ -470,7 +442,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
 
    docker ps -a
    ```
-10. Install dan Konfigurasi Prometheus dengan SSL
+### 9. Install dan Konfigurasi Prometheus dengan SSL
   - Download Package Prometheus.
     ```bash
     sudo su
@@ -578,8 +550,9 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     sudo systemctl status prometheus_server.service
     ```
     
-11. Install Grafana
+### 10. Install Grafana
   - Download Package Grafana, lalu pindahkan ke **_/etc_**.
+    
     ```bash
     sudo su
     wget https://dl.grafana.com/oss/release/grafana-11.2.2.linux-amd64.tar.gz
@@ -587,15 +560,19 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     tar -zxvf grafana-v11.2.2.linux-amd64.tar.gz
     cp grafana-v11.2.2.linux-amd64/etc/grafana
     ```
+    
   - Lalu buat service, agar dapat berjalan di background.
+    
     ```bash
+    sudo nano /etc/systemd/system/grafana.service
+    
     [Unit]
     Description=Grafana
-
+    
     [Service]
     User=root
     ExecStart=/etc/grafana/bin/grafana-server -homepath /etc/grafana/ web
-
+    
     [Install]
     WantedBy=default.target
     ```
@@ -622,7 +599,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
   - Kemudian klik “Save & Test”
     ![Branching](./assets/images/data_source_5.png)
     
-12. Install Alert Manager
+### 11. Install Alert Manager
   - Download Package Grafana, lalu pindahkan ke **_/etc_**.
     ```bash
     sudo su
@@ -666,6 +643,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     
   - Konfigurasi untuk rules yang mentrigger alert manager mengirim notifikasi.
     * Rules untuk Web Server Apache atau Nginx yang Down.
+      
       ```yaml
       groups:
       - name: nginx.rules
@@ -688,6 +666,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
     * Rules untuk jumlah Container yang Stopped atau Down.
+      
       ```yaml
       groups:
       - name: container.rules
@@ -703,6 +682,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
     * Rules untuk CPU Available pada semua server atau node.
+      
       ```yaml
       groups:
       - name: cpu-free-under-35-monitoring.rules
@@ -734,6 +714,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
     * Rules untuk Memory Available pada semua server atau node.
+      
       ```yaml
       groups:
       - name: memory-available-under-35-Monitoring.rules
@@ -765,6 +746,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
     * Rules untuk Penyimpanan atau Disk jika penuh dari setiap server atau node.
+      
       ```yaml
       groups:
       - name: disk-usage-75-persen-node-monitoring.rules
@@ -796,6 +778,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
     * Rules untuk Traffic Networking jika ada lonjakan Traffic dari setiap server atau node.
+      
       ```yaml
       groups:
       - name: record-traffic-node-monitoring
@@ -841,6 +824,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       ```
       
   - Lalu buat service, agar dapat berjalan di background.
+    
     ```bash
     [Unit]
     Description=Alert Manager
@@ -864,7 +848,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     sudo systemctl status alert_manager.service
     ```
     
-13. Menambahkan Program Python, agar filter Notifikasi ke Discord
+### 12. Menambahkan Program Python, agar filter Notifikasi ke Discord
   - Ambil Token Discord agar program python nya dapat mengirim notifikasi ke channe Discorrd yang sesuai, dari referensi video [YouTube](https://youtu.be/UYJDKSah-Ww?si=2SYaHg74DT47RuGS) ini (cukup sampai pengambilan Token Discord).
     
   - Donwload contoh sample program python di **_[github](https://github.com/vianAja/Discord-alertmanager-python.git)_** ini. untuk contoh filtering alert agar mengarah ke beberapa channel seperti di contoh. ikuti instruksi sesuai di githubnya.

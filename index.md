@@ -394,7 +394,7 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     ```
      
   - Buat file **_“config.yml”_** di directory **_“/etc/nginx_exporter”_** yang nantinya digunakan untuk koneksi ssl.
-  - 
+    
     ```yaml
     tls_server_config:
        cert_file: /etc/ssl/nginx_exporter/nginx_exporter.crt
@@ -484,7 +484,9 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
       cert_file: /etc/prometheus/certs/10.18.18.10:9090/10.18.18.10:9090.crt
       key_file: /etc/prometheus/certs/10.18.18.10:9090/10.18.18.10:9090.key
     ```
+    
   - Lalu Edit di file **_/etc/prometheus/config.yml_** untuk menambahkan alerting ke AlertManager, Rules untuk Alerting, serta Targets yang akan di Pantau.
+    
     ```yaml
     global:
       scrape_interval: 15s

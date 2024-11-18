@@ -489,18 +489,15 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
     global:
       scrape_interval: 15s
       evaluation_interval: 15s
-    
     alerting:
       alertmanagers:
         - static_configs:
             - targets:
               - 10.18.18.10:9093
-    
     rule_files:
       - "rules-web-server.yml"
       - "rules-container.yml"
       - "rules-node.yml"
-    
     scrape_configs:
       - job_name: "prometheus"
         scheme: https
@@ -508,14 +505,14 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
           ca_file: "/etc/prometheus/certs/10.18.18.10:9090/10.18.18.10:9090.crt"
         static_configs:
         - targets: ["10.18.18.10:9090"]
-    
+      
       - job_name: 'apache-exporter-client01'
         scheme: https
         tls_config:
           ca_file: "/etc/prometheus/apache/apache.crt"
         static_configs:
         - targets: ['10.18.18.20:9117']
-    
+      
       - job_name: 'nginx-exporter-client01'
         scheme: https
         tls_config:
@@ -523,32 +520,32 @@ SSL merupakan Protocol keamanan yang digunakan untuk mengenkrip si data seperti 
           insecure_skip_verify: true
         static_configs:
         - targets: ['10.18.18.20:9113']
-    
+      
       - job_name: 'node monitoring'
         scheme: https
         tls_config:
           ca_file: "/etc/prometheus/node_exporter/node_exporter_monitoring.crt"
         static_configs:
         - targets: ['10.18.18.10:9100']
-    
+      
       - job_name: 'node client01'
         scheme: https
         tls_config:
           ca_file: "/etc/prometheus/node_exporter/node_exporter_client01.crt"
         static_configs:
         - targets: ['10.18.18.20:9100']
-    
+      
       - job_name: 'node client02'
         scheme: https
         tls_config:
           ca_file: "/etc/prometheus/node_exporter/node_exporter_client02.crt"
         static_configs:
         - targets: ['10.18.18.30:9100']
-    
+      
       - job_name: 'docker-node-client02'
         static_configs:
         - targets: ['10.18.18.30:9323']
-    
+      
       - job_name: 'cAdvisor-client02'
         static_configs:
         - targets: ['10.18.18.30:8080']

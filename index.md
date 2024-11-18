@@ -535,8 +535,8 @@ Serta dibutuhkan juga Alerting agar dapat memberikan peringatan dini terkait sem
     [Service]
     User=root
     ExecStart=/etc/prometheus/prometheus \
-        --config.file=/etc/prometheus/config.yml \                                      --
-        --web.external-url=https://10.18.18.10:9090/ \                                  --
+        --config.file=/etc/prometheus/config.yml \
+        --web.external-url=https://10.18.18.10:9090/ \
         --web.config.file=/etc/prometheus/web-config.yml
 
     [Install]
@@ -852,6 +852,32 @@ Serta dibutuhkan juga Alerting agar dapat memberikan peringatan dini terkait sem
   - Ambil Token Discord agar program python nya dapat mengirim notifikasi ke channe Discorrd yang sesuai, dari referensi video [YouTube](https://youtu.be/UYJDKSah-Ww?si=2SYaHg74DT47RuGS) ini (cukup sampai pengambilan Token Discord).
     
   - Donwload contoh sample program python di **_[github](https://github.com/vianAja/Discord-alertmanager-python.git)_** ini. untuk contoh filtering alert agar mengarah ke beberapa channel seperti di contoh. ikuti instruksi sesuai di githubnya.
+
+## Sample Visualisasi dan Dashboard
+### A. Monitoring Node / Server
+  - Up Time Node / Server
+    ![Up Time](./assets/images/uptime.png)
+  - Disk
+    ![Disk](./assets/images/disk.png)
+  - Memory
+    ![Memory](./assets/images/memory.png)
+  - CPU
+    ![CPU](./assets/images/cpu.png)
+  - Traffic
+    ![Traffic](./assets/images/traffic.png)
+    
+### B. Monitoring Container
+  - Container Status
+    ![Container](./assets/images/container.png)
+  - CPU Container
+    ![CPU Container](./assets/images/cpu-container.png)
+    
+### C. Monitoring Web Server
+  - Stats Web Server
+    ![Stats Web Server](./assets/images/stats-web.png)
+  - Total Requests Web Server
+    ![Total Requests Web Server](./assets/images/total-request.png)
+
 
 ### Web Server Aplikasi Tic Tac Toe
 ![Branching](./assets/images/tic_tac_toe.png)

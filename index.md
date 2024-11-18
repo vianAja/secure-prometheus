@@ -427,7 +427,8 @@ Serta dibutuhkan juga Alerting agar dapat memberikan peringatan dini terkait sem
     sudo chmod 666 /var/run/docker.sock
     docker version
     ```
-### 8. Install CAdvisor untuk Monitoring Container Docker
+### 8. Install CAdvisor untuk Monitoring Container Docker.
+
    ```
    docker run -d \
        --volume=/:/rootfs:ro \
@@ -439,7 +440,7 @@ Serta dibutuhkan juga Alerting agar dapat memberikan peringatan dini terkait sem
        --detach=true \
        --name=cadvisor\
        gcr.io/cadvisor/cadvisor:latest
-
+   
    docker ps -a
    ```
 ### 9. Install dan Konfigurasi Prometheus dengan SSL

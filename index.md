@@ -180,7 +180,7 @@ title: Secure Prometheus
        sudo openssl genrsa -out /etc/ssl/nginx/nginx.key 2048
        
        sudo openssl req sha512-new \
-         -subj "/C=IN/ST=jateng/L=kendal/0=Prometheus Najwan/OU=Prometheus Najwan/CN=Prometheus Najwan>" \
+         -subj "/C=IN/ST=jateng/L=kendal/0=Nginx Najwan/OU=Nginx Najwan/CN=Nginx Najwan>" \
          -key /etc/ssl/nginx/nginx.key \
          -out /etc/ssl/nginx/nginx.csr
 

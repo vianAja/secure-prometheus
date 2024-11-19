@@ -429,19 +429,21 @@ title: Secure Prometheus
     ```
     
 ### 8. Install CAdvisor untuk Monitoring Container Docker.
-  ```
-  docker run -d \
-     --volume=/:/rootfs:ro \
-     --volume=/var/run:/var/run:ro \
-     --volume=/sys:/sys:ro \
-     --volume=/var/lib/docker/:/var/lib/docker:ro \
-     --volume=/dev/disk/:/dev/disk:ro \
-     --publish=8080:8080 \
-     --detach=true \
-     --name=cadvisor\
-     gcr.io/cadvisor/cadvisor:latest
-  docker ps -a
-  ```
+  - Jalankan Container CAdvisor.
+    ```
+    docker run -d \
+       --volume=/:/rootfs:ro \
+       --volume=/var/run:/var/run:ro \
+       --volume=/sys:/sys:ro \
+       --volume=/var/lib/docker/:/var/lib/docker:ro \
+       --volume=/dev/disk/:/dev/disk:ro \
+       --publish=8080:8080 \
+       --detach=true \
+       --name=cadvisor\
+       gcr.io/cadvisor/cadvisor:latest
+    
+    docker ps -a
+    ```
  
 ### 9. Install dan Konfigurasi Prometheus dengan SSL
   - Download Package Prometheus.
